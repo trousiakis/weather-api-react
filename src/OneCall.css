@@ -1,0 +1,103 @@
+.svg-3 {
+    position: absolute;
+    z-index:-1;
+    overflow: visible;
+}
+.svg-4 {
+    display:none;
+}
+
+.svg-3 {
+    top:1rem;
+    right:0rem;
+    
+   
+}
+
+.svg-4 {
+    bottom:2rem;
+    left:0rem;
+    
+   
+}
+
+@media (min-width:70rem) {
+    .svg-4 {
+        display: block;
+        bottom:2rem;
+        left:0rem;
+        position: absolute;
+    z-index:-1;
+    overflow: visible;
+    }
+
+    .WeatherForm {
+        width:48%;
+    }
+}
+.box {
+    height:96vh;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+     justify-content: flex-start;
+    align-items: center; 
+   
+
+    /* overflow: hidden; */
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.weatherContainer {
+    background-color: hsla(258, 46%, 75%, 0.1);;
+    backdrop-filter: blur(.18em);
+    display: flex;
+    min-height: 18em;
+    width: 23em;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1em;
+    align-items: center;
+    padding:1.1em 2em 1.3em 2em;
+    border-radius: 1em;
+    box-shadow: -8px 10px 21px 2px rgba(0,0,0,0.31);
+}
+
+.weatherContainer > h1 {
+    font-size: 1.4em;
+    color: hsl(258, 56%, 61%);
+}
+
+.centerBox{
+    color: hsl(258, 56%, 61%);
+    font-weight: 600;
+    background-color: hsla(258, 46%, 75%, 0.3);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:1em ;
+    border-radius: .75em;
+    box-shadow: 0px 2px 21px 4px rgba(0,0,0,0.28);
+}
+
+.buttomBox {
+    text-align: center;
+    color: hsl(258, 56%, 61%);
+    font-weight: 600;
+    display: flex;
+    /* flex-direction: column; */
+    gap:1em;
+    align-items: center;
+    padding-top: 1em;
+    justify-content: center;
+    margin-top:1em;
+}
+
+.label{
+    color: hsl(258 56% 61% / .65);
+    font-weight: 500;
+}

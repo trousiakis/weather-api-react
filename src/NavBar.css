@@ -1,0 +1,114 @@
+.NavBar-nav {
+    display:flex;
+    width: 80vw;
+    margin-top:2em;
+  align-items: center;
+   justify-content: space-between;
+   padding:1rem 1rem 1rem 0;
+}
+.NavBar-listWrapper {
+    
+    display: flex;
+    
+}
+
+.NavBar-list {
+    list-style: none;
+    padding-right: 2rem;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:1.6em;
+    /* margin-right:13rem; */
+    font-size: 1.3rem;
+}
+.NavBar-logo {
+    font-size: 2.1rem;
+    font-weight: 900;
+    
+    
+}
+
+.NavBar-listWrapper .navBarForm{
+   
+    min-height: fit-content;
+    display:flex;
+    align-items: center;
+    /* margin-left:12rem; */
+    
+}
+.NavBar-listWrapper .navBarForm > label{
+    display: none;
+}
+
+.NavBar-listWrapper .navBarForm .WeatherForm-input{
+    border:0;
+    background: rgba(96, 95, 95, 0.2);
+    border-radius: .3rem;
+    min-height: 1.5em;
+    margin:0;
+    text-align: center;
+    font-family:inherit;
+}
+.NavBar-listWrapper .navBarForm .inputWrapper{
+    position: relative;
+
+}
+.NavBar-listWrapper .navBarForm .inputWrapper::after {
+content: ' ';
+position: absolute;
+width: 10em;
+height: .15em;
+background:black;
+top: 1.2em;
+left: .55em;
+transform: scaleX(0);
+
+}
+
+
+.NavBar-listWrapper .navBarForm .WeatherForm-input:focus {
+    outline: none;
+    background: transparent;
+    transform: scaleX(1);
+    
+}
+.NavBar-listWrapper .navBarForm .WeatherForm-input:focus {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.NavBar-listWrapper .navBarForm > button {
+    border: 0;
+    background: 0;
+    font-family:inherit;
+
+    height: 100%;
+
+    background:rgba(0, 0, 0, .7);
+    color:white;
+    border-radius: .3rem;
+    font-size: 1.05em;
+    font-weight: 600;
+}
+.NavBar-listWrapper .navBarForm > button:focus{
+    outline: none;
+}
+.NavBar-list {
+    display: none;
+}
+
+@media (min-width:70rem) {
+    .NavBar-list {
+        list-style: none;
+        padding-right: 2rem;
+        width: min-content;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap:1.6em;
+        /* margin-right:13rem; */
+        font-size: 1.3rem;
+    }
+}

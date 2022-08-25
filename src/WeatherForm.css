@@ -1,0 +1,95 @@
+.svg-3 {
+    position: absolute;
+    z-index:-1;
+    overflow: visible;
+}
+.svg-4 {
+    display:none;
+}
+
+.svg-3 {
+    top:1rem;
+    right:0rem;
+    
+   
+}
+
+.svg-4 {
+    bottom:2rem;
+    left:0rem;
+    
+   
+}
+
+@media (min-width:70rem) {
+    .svg-4 {
+        display: block;
+        bottom:2rem;
+        left:0rem;
+        position: absolute;
+    z-index:-1;
+    overflow: visible;
+    }
+
+    .WeatherForm {
+        width:48%;
+    }
+}
+
+.box {
+    height:96vh;
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+
+}
+
+.WeatherForm {
+    max-height: 30%;
+    width: 52%;
+    display: flex;
+    padding: 10em;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: hsla(258, 46%, 75%, 0.1);;
+    backdrop-filter: blur(.18em);
+    border-radius: 1em;
+    box-shadow: -6px 8px 14px 5px rgba(0,0,0,0.33);
+    font-family:inherit;
+}
+
+
+
+.WeatherForm-input {
+    border:0;
+    background: rgba(96, 95, 95, 0.2);
+    border-radius: .3rem;
+    text-align: center;
+    margin:0;
+    font-size: clamp(1rem, 1.9vw, 2.8rem);
+}
+.WeatherForm > label {
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-weight: 500;
+    font-family: inherit;
+    margin-bottom: .85em;
+    min-width:10em;
+    color: hsl(258, 56%, 61%);
+}
+
+.WeatherForm-button {
+    border: 0;
+    background: rgb(104, 89, 203);
+    color:white;
+    font-size: clamp(1em, .7vw, 1.3em);
+    font-weight: 600;
+    padding: .7em .9em .7em .9em;
+    margin-top: 2em ;
+    min-width: 30%;
+    border-radius: .30em;
+    font-family: inherit;
+    box-shadow: -10px 15px 23px -5px rgba(0,0,0,0.51);
+}
+

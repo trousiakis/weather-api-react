@@ -1,0 +1,231 @@
+*, *::before, *::after {
+
+    box-sizing: border-box;
+    
+}
+/* Background  Animations */
+.svg-1,
+.svg-2 {
+    position: absolute;
+    z-index:-1;
+    overflow: visible;
+}
+.svg-1 {
+    top:8rem;
+    right:0rem;
+    
+   
+}
+.svg-2 {
+   
+    top:50em;
+    left:0em;
+    width:100vw;
+  
+    
+}
+
+.cloud-1 {
+    animation:cloud-anim 13s alternate-reverse infinite linear;
+}
+
+.cloud-2 {
+    animation:cloud-anim 15s alternate-reverse infinite linear;
+}
+
+.cloud-3 {
+    animation:cloud-anim 17s alternate-reverse infinite linear;
+}
+.balloon-back-1 {
+    animation:cloud-anim 18s alternate-reverse infinite linear;
+    
+}
+.balloon-back-2 {
+    animation:cloud-anim 20s alternate-reverse infinite linear;
+    
+}
+
+.balloon-main {
+    transform-origin: top;
+    animation: balloon-anim 7s alternate-reverse infinite linear;
+}
+
+@keyframes cloud-anim {
+    from {
+        transform :translateX(0);
+    }
+    to {
+        transform :translateX(-100px);
+    }
+}
+
+@keyframes balloon-anim {
+    from {
+        transform :translateX(0);
+        transform: rotate(0deg);
+    }
+    to {
+        transform :translateX(-25px);
+        transform: rotate(2deg);
+
+    }
+    to {
+        transform :translateX(0px);
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform :translateX(-25px);
+        transform: rotate(-2deg);
+
+    }
+}
+
+
+
+/* main app */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgba(231, 231, 231, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;  
+    padding: 0;
+    height: 100vh;
+    /* background-image: url(balloon.svg);
+    background-repeat:no-repeat ;
+    background-position-y:10.5rem ;
+     */
+
+}
+
+.container {
+/*    
+    border: 2px solid black;
+    border-radius: 1em; */
+    padding:1.5em;   
+    width:80vw;
+    margin-top: 2.8em;
+    min-height: 90vh;
+   
+}
+
+.search-main {
+    padding-top: 50em ;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.text-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.text-field > h1 {
+    margin: 0;
+    font-size: clamp(3rem, 5vw, 6rem);
+   
+    padding-top: 4.5rem;
+} 
+
+.text-field > p {
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.btn-explore {
+    border: 0;
+    background: rgb(104, 89, 203);
+        color:white;
+    font-size: clamp(1.45em, 1vw, 1.5vw);
+    font-weight: 600;
+    padding: 1em 1.4em 1em 1.4em;
+    border-radius: .30em;
+    font-family: inherit;
+    box-shadow: -10px 15px 23px -5px rgba(0,0,0,0.51);
+    align-self: center;
+   }
+
+   .input-area {
+       display: flex;
+       
+       align-items: center; 
+       justify-content: center;
+   }
+
+
+   
+  
+    
+    
+@media (min-width:70rem) {
+        
+        .search-main {
+            padding-top: 0;
+            margin-top: 6rem ;
+            width: 40vw;
+            
+        }   
+        .text-field {
+            display: flex;
+            justify-content: space-between;
+            gap:2rem;
+            flex-direction: column;
+            text-align: left;
+        }
+        
+        .text-field > h1 {
+            margin: 0;
+            /* font-size: 4.5rem; */
+            
+            padding-top: 4.5rem;
+        } 
+        
+        .btn-explore {
+            align-self: flex-end;
+        }
+        .svg-1 {
+           width: 40vw;
+        }
+        
+        
+    }
+
+    @media (max-width:40rem) {
+        
+        .search-main {
+            padding-top: 0em;
+            margin-top: 20rem ;
+            
+            
+            
+        }   
+
+        .text-field > h1 {
+            margin: 0;
+            /* font-size: 2.6rem; */
+            
+            padding-top: 4.5rem;
+            
+        } 
+        
+    }
+
+    @media (min-width:105rem) {
+       
+        /* .text-field > h1 {
+            font-size:5rem ;
+        }
+        .text-field > p {
+            font-size:2rem ;
+        } */
+    }
+    
+   
